@@ -1,6 +1,6 @@
 # Albo-Challenge
 
-## Explique los principios de la arquitectura MVVM. ¿Por qué es preferible sobre MVC en desarrollo Android?
+### Explique los principios de la arquitectura MVVM. ¿Por qué es preferible sobre MVC en desarrollo Android?
 
 El principio clave detrás de MVVM es el desacoplamiento de View y ViewModel.
 Esta separación permite una mejor organización, capacidad de prueba y mantenimiento del código.
@@ -13,7 +13,7 @@ Por qué MVVM es mejor para dividir sus aplicaciones en componentes modulares de
 - Puede escribir casos de prueba unitaria tanto para el modelo de vista como para la capa Modelo sin la necesidad de hacer referencia a la Vista.
 
 
-## Describa cómo Koin facilita la inyección de dependencia en aplicaciones Android
+### Describa cómo Koin facilita la inyección de dependencia en aplicaciones Android
 
 La inyección de dependencia es una técnica poderosa para gestionar dependencias en aplicaciones de Android, y Koin ofrece un enfoque simple y pragmático para lograrlo.
 Al utilizar Koin, los desarrolladores pueden crear código más modular y fácil de mantener.
@@ -28,7 +28,7 @@ Al utilizar Koin, los desarrolladores pueden crear código más modular y fácil
 - La naturaleza liviana de Koin lo hace rápido y eficiente, ya que evita la generación y reflexión de código.
 
 
-## Compare Retrofit y Volley para realizar llamadas de red en Android. ¿Cuáles son las ventajas de usar uno sobre el otro?
+### Compare Retrofit y Volley para realizar llamadas de red en Android. ¿Cuáles son las ventajas de usar uno sobre el otro?
 
 **Retrofit**
 

@@ -36,13 +36,12 @@ class CardViewModel(private val repository: ValueRepository) : ViewModel() {
 
     init {
         repository.getValue()
-            .onEach { list ->
+            .onEach { quantity ->
                 _state.update {
                     it.copy(
                         isLoading = false,
                         isAnimation = true,
-                        progressState = ProgressState(actual = 1, quantity = list.size),
-                        list = list
+                        progressState = ProgressState(actual = 1, quantity = quantity),
                     )
                 }
 
@@ -104,8 +103,7 @@ class CardViewModel(private val repository: ValueRepository) : ViewModel() {
 data class CardState(
     val isLoading: Boolean = true,
     val isAnimation: Boolean = false,
-    val progressState: ProgressState = ProgressState(),
-    val list: List<String> = emptyList()
+    val progressState: ProgressState = ProgressState()
 )
 
 data class ProgressState(

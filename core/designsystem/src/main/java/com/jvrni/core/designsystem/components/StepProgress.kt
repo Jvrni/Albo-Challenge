@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.LinearProgressIndicator
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ProgressIndicatorDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -24,6 +25,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import com.jvrni.core.designsystem.theme.AlboChallengeTheme
+import com.jvrni.core.designsystem.theme.Colors
 import com.jvrni.core.designsystem.theme.primary
 import kotlinx.coroutines.delay
 
@@ -33,7 +35,7 @@ private val progressHeight = 28.dp
 fun StepProgress(
     modifier: Modifier = Modifier,
     height: Dp = progressHeight,
-    color: Color = primary,
+    color: Color = Colors.primary,
     dividerColor: Color = Color.White,
     quantity: Int,
     actual: Int,
@@ -98,7 +100,8 @@ fun StepProgress(
                     end.linkTo(progress.end)
                 }
                 .padding(top = 7.dp, end = 3.dp),
-            text = "$actual/$quantity ${entity.description}"
+            text = "$actual/$quantity ${entity.description}",
+            color = Colors.text
         )
     }
 

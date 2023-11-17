@@ -17,6 +17,7 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -44,6 +45,7 @@ import com.jvrni.core.common.extensions.detectSwipe
 import com.jvrni.core.designsystem.components.StepProgress
 import com.jvrni.core.designsystem.components.StepProgressEntity
 import com.jvrni.core.designsystem.theme.AlboChallengeTheme
+import com.jvrni.core.designsystem.theme.Colors
 import com.jvrni.core.designsystem.theme.primary
 import org.koin.androidx.compose.koinViewModel
 
@@ -86,7 +88,7 @@ fun CardScreen(viewModel: CardViewModel = koinViewModel()) {
                 )
             }
             .fillMaxSize()
-            .background(Color.White)
+            .background(Colors.background)
             .padding(15.dp)
     ) {
         StepProgress(
@@ -140,9 +142,9 @@ private fun LoadingScreen() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.White)
+            .background(Colors.background)
     ) {
-        CircularProgressIndicator(modifier = Modifier.align(Alignment.Center), color = primary)
+        CircularProgressIndicator(modifier = Modifier.align(Alignment.Center), color = Colors.primary)
     }
 }
 
@@ -251,7 +253,8 @@ private fun CardBank(
         Column(
             modifier = Modifier
                 .align(if (rotated) Alignment.CenterEnd else Alignment.CenterStart)
-                .padding(top = 30.dp, start = 10.dp),
+                .padding(top = 30.dp)
+                .padding(horizontal = 10.dp),
             horizontalAlignment = if (rotated) Alignment.End else Alignment.Start
         ) {
             Image(

@@ -4,11 +4,13 @@
 ### Pueden incluir diagramas de arquitectura y fragmentos de código para explicar su enfoque.
 
 **Contextos**
+
 En esta sección, presentamos un caso de uso completo para demostrar cómo estructurar una aplicación.
 Imagine que estamos creando una interfaz de usuario que muestra una lista de tareas al usuario. Usamos una base de datos local para buscar y guardar datos para una tarea determinada.
 
 
 **Descripción general**
+
 Comience revisando el siguiente diagrama, que muestra cómo todos los módulos deben interactuar entre sí después de crear la aplicación.
 
 ![Diagrama](images/diagram-case-study.png)
@@ -16,6 +18,7 @@ Comience revisando el siguiente diagrama, que muestra cómo todos los módulos d
 Tenga en cuenta que cada componente depende únicamente del que está un nivel por debajo de él. Por ejemplo, los componentes de la interfaz de usuario solo dependen del modelo de vista. El repositorio es la única clase que depende de varias otras clases. En este ejemplo, el repositorio se basa en un modelo de datos persistente.
 
 **Crear la interfaz de usuario**
+
 La interfaz de usuario puede consistir en una actividad, un fragmento o una pantalla componible.
 
 - **Ejemplos de Activity UI**
@@ -180,6 +183,7 @@ Tenga en cuenta que el método getTasks devuelve un objeto de tipo Flow<List<Tas
 **Inyección de dependencia de Koin**
 
  - **Configuración de Gradle**
+   
 Agregue la dependencia Koin de Android como se muestra a continuación:
 
 ```
@@ -191,6 +195,7 @@ dependencies {
 ```
 
  - **El módulo Koin**
+   
 Utilice la función de módulo para declarar un módulo Koin. Un módulo Koin es el lugar donde definimos todos nuestros componentes a inyectar.
 
 ```

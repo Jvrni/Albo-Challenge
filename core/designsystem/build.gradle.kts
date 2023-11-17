@@ -1,3 +1,16 @@
+/**
+ * ENGLISH
+ *
+ * We can improve our build file by creating a configuration module to control our plugins, dependencies and versions.
+ *
+ * .
+ *
+ * .
+ *
+ * SPANISH
+ *
+ * Podemos mejorar nuestro archivo de compilación creando un módulo de configuración para controlar nuestros complementos, dependencias y versiones.
+ */
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")

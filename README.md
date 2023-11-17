@@ -1,63 +1,51 @@
-# Albo-Challenge
+Albo Challenge App
+==================
 
-### Explique los principios de la arquitectura MVVM. ¿Por qué es preferible sobre MVC en desarrollo Android?
+# English
 
-El principio clave detrás de MVVM es el desacoplamiento de View y ViewModel.
-Esta separación permite una mejor organización, capacidad de prueba y mantenimiento del código.
-
-Por qué MVVM es mejor para dividir sus aplicaciones en componentes modulares de propósito único, como:
-- La lógica empresarial está desacoplada de Ul.
-- Fácil de mantener y probar
-- Componentes fáciles de reutilizar
-- Arquitectura débilmente acoplada: MVVM hace que la arquitectura de su aplicación esté débilmente acoplada.
-- Puede escribir casos de prueba unitaria tanto para el modelo de vista como para la capa Modelo sin la necesidad de hacer referencia a la Vista.
+**Albo Challenge** is a fully functional Android app built entirely with Kotlin and Jetpack Compose. This
+Follows Android design and development best practices.
 
 
-### Describa cómo Koin facilita la inyección de dependencia en aplicaciones Android
+# Questions
 
-La inyección de dependencia es una técnica poderosa para gestionar dependencias en aplicaciones de Android, y Koin ofrece un enfoque simple y pragmático para lograrlo.
-Al utilizar Koin, los desarrolladores pueden crear código más modular y fácil de mantener.
+The **Albo Challenge** theoretical questions
+[questions_and_answers](docs/Questions.md).
 
-**Configuración:** 
-- Koin utiliza un enfoque de configuración simple basado en DSL, lo que facilita su configuración y comprensión.
+# Architecture
 
-**Curva de aprendizaje:**
-- Koin es conocido por su simplicidad y su naturaleza amigable para principiantes. Su sintaxis DSL y su sencilla configuración hacen que sea fácil de entender.
+The **Albo Challenge** app follows the
+[official architecture guidance](https://developer.android.com/topic/architecture)
+and is described in detail in the
+[architecture learning journey](docs/Architecture.md).
 
-**Rendimiento:**
-- La naturaleza liviana de Koin lo hace rápido y eficiente, ya que evita la generación y reflexión de código.
+# Modularization
 
-
-### Compare Retrofit y Volley para realizar llamadas de red en Android. ¿Cuáles son las ventajas de usar uno sobre el otro?
-
-**Retrofit**
-
-- Retrofit puede analizar muchos otros tipos de respuestas automáticamente, como:
-Boolean: la respuesta de la API web debe ser booleana.
-Integer: la respuesta de la API web debe ser un número entero.
-Date: la respuesta de la API web debe ser una fecha en formato largo.
-String: la respuesta de la API web debe estar en formato de cadena.
-Object: la respuesta de la API web debe estar en un objeto JSON.
-Collections: la respuesta de la API web debe estar en formato de cadena.
-Cargando imagen.
-
-- La actualización no admite el almacenamiento en caché.
-
-- La modernización no admite ningún mecanismo de reintento. Pero se puede lograr manualmente haciendo algún código adicional.
-
-- Por otro lado, Retrofit tiene soporte completo para solicitudes de publicación y cargas de varias partes.
+The **Albo Challenge** app has been fully modularized and you can find the detailed guidance and
+description of the modularization strategy used in
+[modularization learning journey](docs/Modularization.md).
 
 
-**Volley**
+# Spanish
 
-- StringRequest: este tipo de solicitud convierte la respuesta en una cadena.
-JsonObjectRequest: este tipo de solicitud y respuesta se convierte automáticamente en un JSONObject.
-JsonArrayRequest: este tipo de solicitud y respuesta se convierte automáticamente en un JSONArray.
-ImageRequest: este tipo de solicitud convierte la respuesta en un mapa de bits decodificado.
+**Albo Challenge** es una aplicación de Android completamente funcional creada íntegramente con Kotlin y Jetpack Compose. Este
+Sigue las mejores prácticas de diseño y desarrollo de Android.
 
-- Almacenamiento en caché: Android Volley tiene un mecanismo de almacenamiento en caché flexible.
-Cuando se realiza una solicitud a través de volley primero, se verifica el caché para obtener una respuesta adecuada, si se encuentra allí, se devuelve y se analiza; de lo contrario, se realiza un acceso a la red.
 
-- Mecanismo de reintento: con volley, podemos establecer una política de reintento utilizando el método setRetryPolicy. Admite el tiempo de espera de solicitud personalizado, el número de reintentos y el multiplicador de retrasos.
+# Preguntas
 
-- Solicitudes de publicaciones y cargas de varias partes: Volley admite solicitudes de publicaciones y cargas de varias partes, pero para las solicitudes de publicaciones, tenemos que convertir nuestros objetos java a JSONObject. También para cargas de varias partes, tenemos que hacer algo de código adicional y usar algunas clases adicionales.
+El **Albo Challenge** preguntas teóricas
+[pregunutas_y_respuestas](docs/Questions-Es.md).
+
+# Arquitectura
+
+El **Albo Challenge** la aplicación sigue el
+[guía oficial de arquitectura](https://developer.android.com/topic/architecture)
+y se describe detalladamente en el
+[viaje de aprendizaje de arquitectura](docs/Architecture-Es.md).
+
+# Modularization
+
+El **Albo Challenge** La aplicación se ha modularizado completamente y puede encontrar la guía detallada y
+descripción de la estrategia de modularización utilizada en
+[viaje de aprendizaje de modularización](docs/Modularization-Es.md).

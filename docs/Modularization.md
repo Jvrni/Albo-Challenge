@@ -82,6 +82,9 @@ how you can organize your project. In general, you should strive for low couplin
 
 ![Diagram showing types of modules and their dependencies in Albo Challenge](images/modularization.png "Diagram showing types of modules and their dependencies in Albo Challenge")
 
+**Top tip**: A module graph (shown above) can be useful during modularization planning for
+visualizing dependencies between modules.
+
 The Albo Challenge app contains the following types of modules:
 
 * The `app` module - contains app level and scaffolding classes that bind the rest of the codebase,

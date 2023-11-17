@@ -63,7 +63,7 @@ The [UI layer](https://developer.android.com/topic/architecture/ui-layer) compri
 The ViewModels receive streams of data from repositories and transform them into UI state. The UI elements reflect this state, and provide ways for the user to interact with the app. These interactions are passed as events to the view model where they are processed.
 
 
-![Diagram showing the UI layer architecture](images/architecture-4-ui-layer.png "Diagram showing the UI layer architecture")
+![Diagram showing the UI layer architecture](images/architecture-ui-layer.png "Diagram showing the UI layer architecture")
 
 
 ### Modeling UI state

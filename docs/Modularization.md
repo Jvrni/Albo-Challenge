@@ -47,8 +47,7 @@ the build configuration. This can cause Gradle sync times to increase, and incur
 maintenance cost. In addition, adding more modules increases the complexity of the project’s Gradle
 setup, when compared to a single monolithic module. This can be mitigated by making use of
 convention plugins, to extract reusable and composable build configuration into type-safe Kotlin
-code. In the Albo Challenge app, these convention plugins can be found in
-the [`build-logic` folder](https://github.com/Jvrni/Albo-Challenge/tree/main/build-logic).
+code.
 
 **Not enough modules** - conversely if your modules are few, large and tightly coupled, you end up
 with yet another monolith. This means you lose some benefits of modularization. If your module is

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="description_progress">tarjetazos</string>
+    <string name="card_user_name">João Varani</string>
 </resources>

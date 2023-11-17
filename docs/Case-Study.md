@@ -4,11 +4,13 @@
 ### They may include architecture diagrams and code snippets to explain their approach.
 
 **Contexts**
+
 In this section, we present a complete use case to demonstrate how to structure an app.
 Imagine that we are creating a UI that shows a list of tasks to the user. We use a local database to fetch and save data for a given task.
 
 
 **Overview**
+
 Start by reviewing the following diagram, which shows how all the modules need to interact with each other after the app is created.
 
 ![Diagram](images/diagram-case-study.png)
@@ -182,7 +184,8 @@ Note that the getTasks method returns an object of type Flow<List<Task>. Using F
 
 **Koin dependency injection**
 
- - **Gradle Setup**
+- **Gradle Setup**
+   
 Add the Koin Android dependency like below:
 
 ```
@@ -193,7 +196,8 @@ dependencies {
 }
 ```
 
- - **The Koin module**
+- **The Koin module**
+   
 Use the module function to declare a Koin module. A Koin module is the place where we define all our components to be injected.
 
 ```
@@ -225,7 +229,6 @@ val appModule = module {
     single<TaskRepository> { TaskRepositoryImpl() }
 }
 ```
-
 - **Start Koin**
 
 We need to start Koin with our Android application. Just call the startKoin() function in the application's main entry point, our App class:

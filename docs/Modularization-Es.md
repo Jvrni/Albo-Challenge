@@ -47,8 +47,7 @@ la configuración de compilación. Esto puede hacer que los tiempos de sincroniz
 costo de mantenimiento. Además, agregar más módulos aumenta la complejidad del Gradle del proyecto.
 configuración, en comparación con un único módulo monolítico. Esto se puede mitigar haciendo uso de
 complementos de convención, para extraer la configuración de compilación reutilizable y componible en Kotlin con seguridad de tipos
-código. En la aplicación Albo Challenge, estos complementos de convención se pueden encontrar en
-el [`build-logic` folder](https://github.com/Jvrni/Albo-Challenge/tree/main/build-logic).
+código.
 
 **No hay suficientes módulos** - por el contrario, si sus módulos son pocos, grandes y están estrechamente acoplados, terminará
 con otro monolito más. Esto significa que se pierden algunos beneficios de la modularización. Si su módulo es

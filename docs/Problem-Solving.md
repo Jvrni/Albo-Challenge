@@ -3,6 +3,7 @@
 ### Given a situation where an Android application is facing memory issues due to incorrect handling of contexts, how would you fix it?
 
 **Contexts**
+
 Android SDK is full of classes that have Context as a parent class. Such classes and abstractions can be called “context-related”. Official documentation defines Context as such:
 “Interface to global information about an application environment. This is an abstract class whose implementation is provided by the Android system. It allows access to application-specific resources and classes, as well as up-calls for application-level operations such as launching activities, broadcasting and receiving intents, etc.”
 
@@ -10,6 +11,7 @@ What we need to remember about memory leaks + context is that everything relatin
 GC can’t clean resources when the reference of Activity or Context is present, but Activity is Destroyed and does not exist for us.
 
 **You should not**  
+
  - Avoid using static variables for views or context-related references.
  - Pass a context-related reference to a Singleton class.
  - Improperly use Context. Use applicationContext() instead of activity context or view context when it’s possible. For example, for Toasts, Snackbars.

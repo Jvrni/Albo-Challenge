@@ -59,7 +59,7 @@ La [capa de interfaz de usuario](https://developer.android.com/topic/architectur
 
 Los ViewModels reciben flujos de datos de los repositorios y los transforman en un estado de interfaz de usuario. Los elementos de la interfaz de usuario reflejan este estado y brindan formas para que el usuario interactúe con la aplicación. Estas interacciones se pasan como eventos al modelo de vista donde se procesan.
 
-![Diagrama que muestra la arquitectura de la capa de UI](images/architecture-4-ui-layer.png "Diagrama que muestra la arquitectura de la capa de UI")
+![Diagrama que muestra la arquitectura de la capa de UI](images/architecture-ui-layer.png "Diagrama que muestra la arquitectura de la capa de UI")
 
 
 ### Modelado del estado de la interfaz de usuario

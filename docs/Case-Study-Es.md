@@ -1,4 +1,4 @@
-# Albo-Challenge
+# Caso de Estudio
 
 ### Presente un escenario específico (por ejemplo, una aplicación de lista de tareas pendientes) y pida al candidato que describa cómo estructuraría la aplicación utilizando MVVM, LiveData, Room, Koin y Retrofit.
 ### Pueden incluir diagramas de arquitectura y fragmentos de código para explicar su enfoque.

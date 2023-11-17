@@ -1,4 +1,4 @@
-# Albo-Challenge
+# Questions
 
 ### Explain the principles of MVVM architecture. Why is it preferable over MVC in Android development?
 

@@ -1,4 +1,4 @@
-# Albo-Challenge
+# Preguntas de Resolución de Problemas
 
 ### Dada una situación donde una aplicación Android se enfrenta a problemas de memoria debido al manejo incorrecto de contextos, ¿cómo lo solucionaría?
 

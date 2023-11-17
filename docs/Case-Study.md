@@ -1,4 +1,4 @@
-# Albo-Challenge
+# Case Study
 
 ### Present a specific scenario (for example, a to-do list application) and ask the candidate to outline how they would structure the application using MVVM, LiveData, Room, Koin and Retrofit.
 ### They may include architecture diagrams and code snippets to explain their approach.

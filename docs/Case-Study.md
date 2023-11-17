@@ -17,6 +17,7 @@ Note that each component depends only on the one that is one level below it. For
 
 
 **Create the user interface**
+
 The UI can consist of an Activity, Fragment or a Composable Screen.
 
 - **Examples of Activity UI**

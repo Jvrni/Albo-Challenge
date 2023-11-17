@@ -8,6 +8,11 @@ Follows Android design and development best practices.
 
 [el desafío - español](docs/Challenge-Es.md).
 
+## Screenshots
+
+![Screenshot of app screens](docs/images/screenshots.png)
+
+
 ## Questions
 
 The **Albo Challenge** theoretical questions.

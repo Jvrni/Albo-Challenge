@@ -1,4 +1,4 @@
-# Albo-Challenge
+# Preguntas Teóricas
 
 ### Explique los principios de la arquitectura MVVM. ¿Por qué es preferible sobre MVC en desarrollo Android?
 

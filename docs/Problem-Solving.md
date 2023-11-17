@@ -1,4 +1,4 @@
-# Albo-Challenge
+# Problem Solving
 
 ### Given a situation where an Android application is facing memory issues due to incorrect handling of contexts, how would you fix it?
 

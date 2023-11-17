@@ -37,7 +37,7 @@ description of the modularization strategy used in.
 
 ## Problem Solving
 
-The **Albo Challenge** problem solving.
+Another part of the challenge with some questions
 
 [problem solving - english](docs/Problem-Solving.md).
 
@@ -45,7 +45,6 @@ The **Albo Challenge** problem solving.
 
 ## Case Study
 
-The **Albo Challenge** 
 Present a specific scenario (for example, a to-do list application) and ask the candidate to outline how they would structure the application using MVVM, LiveData, Room, Koin and Retrofit.
 
 [case study - english](docs/Case-Study.md).

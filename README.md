@@ -8,7 +8,7 @@ Follows Android design and development best practices.
 ## Questions
 
 The **Albo Challenge** theoretical questions
-[questions_and_answers](docs/Questions.md).
+[questions and answers](docs/Questions.md).
 
 ## Architecture
 
@@ -34,7 +34,7 @@ Sigue las mejores prácticas de diseño y desarrollo de Android.
 ## Preguntas
 
 El **Albo Challenge** preguntas teóricas
-[pregunutas_y_respuestas](docs/Questions-Es.md).
+[pregunutas y respuestas](docs/Questions-Es.md).
 
 ## Arquitectura
 

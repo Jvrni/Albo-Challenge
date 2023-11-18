@@ -36,21 +36,6 @@ The architecture follows a reactive programming model with [unidirectional data 
 The data flow is achieved using streams, implemented using [Kotlin Flows](https://developer.android.com/kotlin/flow).
 
 
-## Data layer
-
-The data layer is implemented to connect to our web service, in this case it is the source for the application's data.
-
-
-
-![Diagram showing the data layer architecture](images/architecture-data-layer.png "Diagram showing the data layer architecture")
-
-
-The repository has its own model. For example, the `Value Repository` has a `Value Response` model.
-
-Repositories are the public API for other layers, they provide the _only_ way to access the app data. The repositories typically offer one or more methods for reading and writing data.
-
-
-
 ## UI Layer
 
 The [UI layer](https://developer.android.com/topic/architecture/ui-layer) comprises:
@@ -74,3 +59,18 @@ UI state is modeled as a sealed hierarchy using interfaces and immutable data cl
 
 *   the UI state always represents the underlying app data - the app data is the source-of-truth.
 *   the UI elements handle all possible states.
+
+
+
+## Data layer
+
+The data layer is implemented to connect to our web service, in this case it is the source for the application's data.
+
+
+
+![Diagram showing the data layer architecture](images/architecture-data-layer.png "Diagram showing the data layer architecture")
+
+
+The repository has its own model. For example, the `Value Repository` has a `Value Response` model.
+
+Repositories are the public API for other layers, they provide the _only_ way to access the app data. The repositories typically offer one or more methods for reading and writing data.

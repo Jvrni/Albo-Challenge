@@ -34,19 +34,6 @@ La arquitectura sigue un modelo de programación reactiva con [flujo de datos un
 El flujo de datos se logra mediante flujos, implementados mediante [Kotlin Flows] up.(https://developer.android.com/kotlin/flow).
 
 
-## Capa de datos
-
-La capa de datos se implementa para conectarse a nuestro servicio web, en este caso es la fuente de datos de la aplicación.
-
-
-
-![Diagrama que muestra la arquitectura de la capa de datos](images/architecture-data-layer.png "Diagrama que muestra la arquitectura de la capa de datos.")
-
-
-El repositorio tiene su propio modelo. Por ejemplo, el `Value Repository` tiene un modelo de `Value Response`.
-
-Los repositorios son la API pública para otras capas y proporcionan la _única_ forma de acceder a los datos de la aplicación. Los repositorios suelen ofrecer uno o más métodos para leer y escribir datos.
-
 
 ## Capa de interfaz de usuario
 
@@ -71,3 +58,17 @@ El estado de la interfaz de usuario se modela como una jerarquía sellada utiliz
 *    el estado de la interfaz de usuario siempre representa los datos subyacentes de la aplicación: los datos de la aplicación son la fuente de la verdad.
 *    los elementos de la interfaz de usuario manejan todos los estados posibles.
 
+
+
+## Capa de datos
+
+La capa de datos se implementa para conectarse a nuestro servicio web, en este caso es la fuente de datos de la aplicación.
+
+
+
+![Diagrama que muestra la arquitectura de la capa de datos](images/architecture-data-layer.png "Diagrama que muestra la arquitectura de la capa de datos.")
+
+
+El repositorio tiene su propio modelo. Por ejemplo, el `Value Repository` tiene un modelo de `Value Response`.
+
+Los repositorios son la API pública para otras capas y proporcionan la _única_ forma de acceder a los datos de la aplicación. Los repositorios suelen ofrecer uno o más métodos para leer y escribir datos.
